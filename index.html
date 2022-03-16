@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.desk {
+			background: #edebe0;
+			padding-left:10px;
+			padding-right:10px;
+			text-align: center;
+			width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.field {
+			background: #aeb0d9;
+			width: 1870px;
+			height: 960px;
+			position: absolute;
+		}
+		.b1 {
+			background:red;
+			width: 70px;
+			height: 70px;
+			border-radius: 40px;
+			position:absolute;
+			margin-left:600px;
+			margin-top:400px;
+		}
+		.b2 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:900px;
+			margin-top:700px;
+		}
+		.b3 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:400px;
+			margin-top:800px;
+		}
+		.b4 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:250px;
+			margin-top:600px;
+		}
+		.b5 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:1100px;
+			margin-top:200px;
+		}
+		.b6 {
+			background:red;
+			width: 60px;
+			height: 60px;
+			border-radius: 35px;
+			position:absolute;
+			margin-left:1000px;
+			margin-top:500px;
+		}
+		.b7 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:1375px;
+			margin-top:700px;
+		}
+		.b8 {
+			background:red;
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			position:absolute;
+			margin-left:1167px;
+			margin-top:621px;
+		}
+		.b9 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:752px;
+			margin-top:200px;
+		}
+		.b10 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position:absolute;
+			margin-left:200px;
+			margin-top:100px;
+		}
+		.b11 {
+			background:red;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position: absolute;
+			margin-left:200px;
+			margin-top:400px;
+		}
+		.b12 {
+			background:red;
+			width: 60px;
+			height: 60px;
+			border-radius: 30px;
+			position:absolute;
+			margin-left:1400px;
+			margin-top:67px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="field">
+		<div class='desk'>
+		<h1>Очки:<span class='score'>0</span></h1>
+		<h2>У тебя осталось <span class='time'>20</span> секунд, чтобы успеть собрать шарики</h2>
+		</div>
+	</div>
+</div>
+<div class="b1 ball"></div>
+<div class="b2 ball"></div>
+<div class="b3 ball"></div>
+<div class="b4 ball"></div>
+<div class="b5 ball"></div>
+<div class="b6 ball"></div>
+<div class="b7 ball"></div>
+<div class="b8 ball"></div>
+<div class="b9 ball"></div>
+<div class="b10 ball"></div>
+<div class="b11 ball"></div>
+<div class="b12 ball"></div>
+
+
+<script type="text/javascript">
+let scor = 0;
+let sc = document.querySelector('.score')
+let b1 = document.querySelector('.b1')
+let b2 = document.querySelector('.b2')
+let b3 = document.querySelector('.b3')
+let b4 = document.querySelector('.b4')
+let b5 = document.querySelector('.b5')
+let b6 = document.querySelector('.b6')
+let b7 = document.querySelector('.b7')
+let b8 = document.querySelector('.b8')
+let b9 = document.querySelector('.b9')
+let b10 = document.querySelector('.b10')
+let b11 = document.querySelector('.b11')
+let b12 = document.querySelector('.b12')
+
+b1.onclick = function() {
+	scor = scor + 1
+	b1.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b2.onclick = function() {
+	scor = scor + 1
+	b2.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b3.onclick = function() {
+	scor = scor + 1
+	b3.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b4.onclick = function() {
+	scor = scor + 1
+	b4.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b5.onclick = function() {
+	scor = scor + 1
+	b5.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b6.onclick = function() {
+	scor = scor + 1
+	b6.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b7.onclick = function() {
+	scor = scor + 1
+	b7.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b8.onclick = function() {
+	scor = scor + 1
+	b8.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b9.onclick = function() {
+	scor = scor + 1
+	b9.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b10.onclick = function() {
+	scor = scor + 1
+	b10.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b11.onclick = function() {
+	scor = scor + 1
+	b11.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+b12.onclick = function() {
+	scor = scor + 1
+	b12.style.display = 'none'
+	sc.innerHTML = scor
+	if(scor == 12){
+		alert('you win!')
+		location.reload()
+	}
+}
+let tm = 20;
+let tim = document.querySelector('.time')
+let time = function() {
+	tm = tm - 1;
+	tim.innerHTML = tm
+	if(tm == 0){
+		alert('you die!')
+		location.reload()
+	}
+}
+let balls = document.querySelectorAll('.ball')
+let moveSphere = function() {
+    let b1w = Math.round(Math.random() * 1830);
+    let b1h = Math.round(Math.random() * 930);
+    let b2w = Math.round(Math.random() * 1830);
+    let b2h = Math.round(Math.random() * 930);
+    let b3w = Math.round(Math.random() * 1830);
+    let b3h = Math.round(Math.random() * 930);
+    let b4w = Math.round(Math.random() * 1830);
+    let b4h = Math.round(Math.random() * 930);
+    let b5w = Math.round(Math.random() * 1830);
+    let b5h = Math.round(Math.random() * 930);
+    let b6w = Math.round(Math.random() * 1830);
+    let b6h = Math.round(Math.random() * 930);
+    let b7w = Math.round(Math.random() * 1830);
+    let b7h = Math.round(Math.random() * 930);
+    let b8w = Math.round(Math.random() * 1830);
+    let b8h = Math.round(Math.random() * 930);
+    let b9w = Math.round(Math.random() * 1830);
+    let b9h = Math.round(Math.random() * 930);
+    let b10w = Math.round(Math.random() * 1830);
+    let b10h = Math.round(Math.random() * 930);
+    let b11w = Math.round(Math.random() * 1830);
+    let b11h = Math.round(Math.random() * 930);
+    let b12w = Math.round(Math.random() * 1830);
+    let b12h = Math.round(Math.random() * 930);
+    balls[0].style.marginLeft = b1w + "px";
+    balls[0].style.marginTop = b1h + "px";
+    balls[0].style.transition = "2s";
+    balls[1].style.marginLeft = b2w + "px";
+    balls[1].style.marginTop = b2h + "px";
+    balls[1].style.transition = "2s";
+    balls[2].style.marginLeft = b3w + "px";
+    balls[2].style.marginTop = b3h + "px";
+    balls[2].style.transition = "2s";
+    balls[3].style.marginLeft = b4w + "px";
+    balls[3].style.marginTop = b4h + "px";
+    balls[3].style.transition = "2s";
+    balls[4].style.marginLeft = b5w + "px";
+    balls[4].style.marginTop = b5h + "px";
+    balls[4].style.transition = "2s";
+    balls[5].style.marginLeft = b6w + "px";
+    balls[5].style.marginTop = b6h + "px";
+    balls[5].style.transition = "2s";
+    balls[6].style.marginLeft = b7w + "px";
+    balls[6].style.marginTop = b7h + "px";
+    balls[6].style.transition = "2s";
+    balls[7].style.marginLeft = b8w + "px";
+    balls[7].style.marginTop = b8h + "px";
+    balls[7].style.transition = "2s";
+    balls[8].style.marginLeft = b9w + "px";
+    balls[8].style.marginTop = b9h + "px";
+    balls[8].style.transition = "2s";
+    balls[9].style.marginLeft = b10w + "px";
+    balls[9].style.marginTop = b10h + "px";
+    balls[9].style.transition = "2s";
+    balls[10].style.marginLeft = b11w + "px";
+    balls[10].style.marginTop = b11h + "px";
+    balls[10].style.transition = "2s";
+    balls[11].style.marginLeft = b12w + "px";
+    balls[11].style.marginTop = b12h + "px";
+    balls[11].style.transition = "2s";
+}
+setInterval(moveSphere,2000)
+setInterval(time,1000)
+</script>
+</body>
+</html>
